@@ -1,0 +1,20 @@
+GET http://localhost:8080/api/auth/authorization
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTEyNjQ1NzMsImV4cCI6MTY5MTI2ODE3MywiYXVkIjoiNDEiLCJpc3MiOiJwaWNrdXJwYWdlLmNvbSJ9.J99As2WWRgbl0sULdXuNB4zD9ld_cEkHOj3PScEueNI
+
+###
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "admin@gmail.com",
+    "password": "#@147258369",
+    "role": "admin",
+    "fullName": "administrator"
+}
+###
+POST http://localhost:8080/api/auth/login
+### 
+POST http://localhost:8080/api/auth/refresh-token
+###
+DELETE http://localhost:8080/api/auth/logout
+
